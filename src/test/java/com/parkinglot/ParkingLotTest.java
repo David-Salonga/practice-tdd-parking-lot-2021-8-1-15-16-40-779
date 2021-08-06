@@ -2,6 +2,7 @@ package com.parkinglot;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class ParkingLotTest {
@@ -28,5 +29,23 @@ public class ParkingLotTest {
         assertNotNull(actualCar);
     }
 
+    @Test
+    void should_return_the_right_car_with_each_ticket_when_fetch_twice_given_parking_lot_with_two_parked_cars() {
+        //given
+        ParkingLot parkingLot = new ParkingLot();
+        Car firstCar = new Car();
+        Car secondCar = new Car();
+        ParkingTicket firstCarTicket = parkingLot.park(firstCar);
+        ParkingTicket secondCarTicket = parkingLot.park(secondCar);
+
+        //when
+        Car actualFirstCar = parkingLot.fetch(firstCarTicket);
+        Car actualSecondCar = parkingLot.fetch(secondCarTicket);
+
+        //then
+        assertEquals(firstCar, actualFirstCar);
+        assertEquals(secondCar, actualSecondCar);
+
+    }
 
 }
