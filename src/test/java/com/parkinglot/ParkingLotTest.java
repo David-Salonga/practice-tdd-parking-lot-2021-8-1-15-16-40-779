@@ -45,7 +45,6 @@ public class ParkingLotTest {
         //then
         assertEquals(firstCar, actualFirstCar);
         assertEquals(secondCar, actualSecondCar);
-
     }
 
 }
