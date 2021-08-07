@@ -99,4 +99,6 @@ public class ParkingBoyTest {
         assertEquals("No available position.", exception.getMessage());
     }
 
+
+
 }
