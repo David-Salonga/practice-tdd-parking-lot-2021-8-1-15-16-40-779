@@ -55,7 +55,7 @@ public class ParkingBoyTest {
     }
 
     @Test
-    void should_return_exception_when_fetch_given_a_parking_lot_and_wrong_ticket() {
+    void should_return_exception_when_fetch_given_a_parking_lot_parking_boy_and_wrong_ticket() {
         //given
         ParkingLot parkingLot = new ParkingLot();
         ParkingBoy parkingBoy = new ParkingBoy(parkingLot);
@@ -65,5 +65,7 @@ public class ParkingBoyTest {
         //then
         assertEquals("Unrecognized parking ticket.", exception.getMessage());
     }
+
+
 
 }
