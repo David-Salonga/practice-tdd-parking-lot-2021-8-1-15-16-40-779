@@ -7,6 +7,13 @@ public class ParkingLot {
 
     private Map<ParkingTicket, Car> parkedPosition = new HashMap<>();
 
+    public ParkingLot(int capacity) {
+    }
+
+    public ParkingLot() {
+    }
+
+
     public ParkingTicket park(Car car) {
         ParkingTicket parkingTicket = new ParkingTicket();
         parkedPosition.put(parkingTicket, car);
