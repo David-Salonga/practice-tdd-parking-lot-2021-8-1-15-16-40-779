@@ -46,47 +46,6 @@ public class ParkingLotTest {
         assertEquals(secondCar, actualSecondCar);
     }
 
-//    @Test
-//    void should_return_null_when_fetch_given_a_parking_lot_and_a_wrong_parking_ticket() {
-//        //given
-//        ParkingLot parkingLot = new ParkingLot();
-//        ParkingTicket wrongTicket = new ParkingTicket();
-//        //when
-//        Car car = parkingLot.fetch(wrongTicket);
-//        //then
-//        assertNull(car);
-//    }
-//
-//
-//    @Test
-//    void should_return_null_when_fetch_given_parking_lot_used_parking_ticket() {
-//        //given
-//        ParkingLot parkingLot = new ParkingLot();
-//        Car car = new Car();
-//        ParkingTicket parkingTicket = parkingLot.park(car);
-//        parkingLot.fetch(parkingTicket);
-//        //when
-//        Car actualCar = parkingLot.fetch(parkingTicket);
-//        //then
-//        assertNull(actualCar);
-//    }
-//
-//    @Test
-//    void should_return_nothing_when_park_given_parking_lot_without_any_position_and_a_car() {
-//        //given
-//        int capacity = 10;
-//        ParkingLot parkingLot = new ParkingLot(capacity);
-//        Car car = new Car();
-//        for (int i = 0; i < capacity; i++) {
-//            parkingLot.park(new Car());
-//        }
-//        //when
-//        ParkingTicket parkingTicket = parkingLot.park(car);
-//        //then
-//        assertNull(parkingTicket);
-//
-//    }
-
     @Test
     void should_return_exception_when_fetch_given_a_parking_lot_and_wrong_ticket() {
         //given
@@ -112,5 +71,4 @@ public class ParkingLotTest {
         //then
         assertEquals("No available position.", exception.getMessage());
     }
-
 }
