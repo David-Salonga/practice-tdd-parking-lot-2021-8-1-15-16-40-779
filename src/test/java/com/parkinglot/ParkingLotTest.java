@@ -74,14 +74,17 @@ public class ParkingLotTest {
     @Test
     void should_return_nothing_when_park_given_parking_lot_without_any_position_and_a_car() {
         //given
-        ParkingLot parkingLot = new ParkingLot(1);
-        parkingLot.park(new Car());
+        int capacity = 10;
+        ParkingLot parkingLot = new ParkingLot(capacity);
         Car car = new Car();
+        for (int i = 0; i < capacity; i++) {
+            parkingLot.park(new Car());
+        }
         //when
         ParkingTicket parkingTicket = parkingLot.park(car);
-
         //then
         assertNull(parkingTicket);
+
     }
     
 
