@@ -116,7 +116,8 @@ public class ParkingBoyTest {
         ParkingTicket parkingTicket = parkingBoy.park(car);
         
         //then
-        assertNotNull(parkingBoy.getParkingLots().get(0));
+        Car actualCar = parkingLot1.fetch(parkingTicket);
+        assertEquals(car, actualCar);
     }
     
 

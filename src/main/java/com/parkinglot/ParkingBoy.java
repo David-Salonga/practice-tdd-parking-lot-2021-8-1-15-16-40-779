@@ -5,15 +5,19 @@ import java.util.List;
 
 public class ParkingBoy {
     private ParkingLot parkingLot;
-
+    private List<ParkingLot> parkingLots = new ArrayList<>();
     public ParkingBoy(ParkingLot parkingLot) {
-        this.parkingLot = parkingLot;
+        parkingLots.add(parkingLot);
     }
 
     public ParkingBoy(List<ParkingLot> parkingLots) {
+        this.parkingLots = parkingLots;
     }
 
     public ParkingTicket park(Car car) {
+        for (ParkingLot parkingLot: parkingLots){
+            return parkingLot.park(car);
+        }
       return parkingLot.park(car);
     }
 
@@ -22,6 +26,6 @@ public class ParkingBoy {
     }
 
     public List<ParkingLot> getParkingLots() {
-        return null;
+        return parkingLots;
     }
 }
