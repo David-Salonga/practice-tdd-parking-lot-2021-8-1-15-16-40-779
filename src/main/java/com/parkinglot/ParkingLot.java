@@ -13,7 +13,7 @@ public class ParkingLot {
     }
 
     public ParkingLot() {
-
+        this.capacity = MAX_CAPACITY;
     }
 
     public ParkingTicket park(Car car) {
@@ -22,7 +22,7 @@ public class ParkingLot {
             parkedPosition.put(parkingTicket, car);
             return parkingTicket;
         }
-        return null;
+        throw new NoAvailablePositionException();
     }
 
     public Car fetch(ParkingTicket parkingTicket) {
