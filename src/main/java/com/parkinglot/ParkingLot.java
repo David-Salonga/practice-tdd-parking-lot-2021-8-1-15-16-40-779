@@ -13,7 +13,7 @@ public class ParkingLot {
     }
 
     public ParkingLot() {
-        this(10);
+
     }
 
     public ParkingTicket park(Car car) {
