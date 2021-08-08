@@ -1,6 +1,7 @@
 package com.parkinglot;
 
 import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -111,10 +112,10 @@ public class ParkingBoyTest {
         parkingLots.add(parkingLot1);
         parkingLots.add(parkingLot2);
         Car car = new Car();
-                
+
         //when
         ParkingTicket parkingTicket = parkingBoy.park(car);
-        
+
         //then
         Car actualCar = parkingLot1.fetch(parkingTicket);
         assertEquals(car, actualCar);
@@ -139,6 +140,7 @@ public class ParkingBoyTest {
         Car actualCar = parkingLot2.fetch(parkingTicket);
         assertEquals(car, actualCar);
     }
+
     // - Given a standard parking boy, who manage two parking lots, both with a parked car, and
     //      two parking ticket, When fetch the car twice, Then return the right car with each ticket
     @Test
@@ -199,6 +201,27 @@ public class ParkingBoyTest {
 
         //then
         assertEquals("Unrecognized parking ticket.", exception.getMessage());
+    }
+
+    //Given a standard parking boy, who manage two parking lots, both without any position,
+    //and a car, When park the car, Then return nothing with error message "No available position."
+
+    @Test
+    void should_exception_error_message_no_available_position_when_park_given_standard_parking_boy_two_parking_lots_without_any_position() {
+        //given
+        int availablePosition = 0;
+        List<ParkingLot> parkingLots = new ArrayList<>();
+        parkingLots.add(new ParkingLot(availablePosition));
+        parkingLots.add(new ParkingLot(availablePosition));
+        ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
+        Car car = new Car();
+
+        //when
+        Exception exception = assertThrows(NoAvailablePositionException.class, () -> parkingBoy.park(car));
+
+        //then
+        assertEquals("No available position.", exception.getMessage());
+
     }
 
 
