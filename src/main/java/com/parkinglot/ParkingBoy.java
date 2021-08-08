@@ -27,7 +27,10 @@ public class ParkingBoy {
     }
 
     public Car fetch(ParkingTicket parkingTicket) {
-        return parkingLot.fetch(parkingTicket);
+        for(ParkingLot parkingLot : parkingLots){
+            return parkingLot.fetch(parkingTicket);
+        }
+        return null;
     }
 
     public List<ParkingLot> getParkingLots() {
