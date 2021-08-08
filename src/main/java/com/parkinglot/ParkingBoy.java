@@ -16,9 +16,14 @@ public class ParkingBoy {
 
     public ParkingTicket park(Car car) {
         for (ParkingLot parkingLot: parkingLots){
-            return parkingLot.park(car);
+            try {
+                return parkingLot.park(car);
+            } catch (NoAvailablePositionException e){
+
+            }
+
         }
-      return parkingLot.park(car);
+     throw new NoAvailablePositionException();
     }
 
     public Car fetch(ParkingTicket parkingTicket) {
