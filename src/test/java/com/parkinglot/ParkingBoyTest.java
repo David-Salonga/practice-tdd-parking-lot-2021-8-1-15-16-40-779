@@ -139,6 +139,30 @@ public class ParkingBoyTest {
         Car actualCar = parkingLot2.fetch(parkingTicket);
         assertEquals(car, actualCar);
     }
-    
+    // - Given a standard parking boy, who manage two parking lots, both with a parked car, and
+    //      two parking ticket, When fetch the car twice, Then return the right car with each ticket
+    @Test
+    void should_return_right_car_with_each_ticket_when_fetch_twice_given_standard_parking_boy_two_parking_lots_both_with_a_parked_car_lot_and_two_parking_tickets() {
+        //given
+        List<ParkingLot> parkingLots = new ArrayList<>();
+        parkingLots.add(new ParkingLot());
+        parkingLots.add(new ParkingLot());
+
+        ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
+
+        Car firstCar = new Car();
+        Car secondCar = new Car();
+        ParkingTicket firstCarTicket = parkingBoy.park(firstCar);
+        ParkingTicket secondCarTicket = parkingBoy.park(secondCar);
+
+        //when
+        Car actualFirstCar = parkingBoy.fetch(firstCarTicket);
+        Car actualSecondCar = parkingBoy.fetch(secondCarTicket);
+
+        //then
+        assertEquals(firstCar, actualFirstCar);
+        assertEquals(secondCar, actualSecondCar);
+    }
+
 
 }
