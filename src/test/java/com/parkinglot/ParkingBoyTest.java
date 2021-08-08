@@ -182,8 +182,6 @@ public class ParkingBoyTest {
 
     }
 
-        //    Given a standard parking boy, who manage two parking lots, and a used ticket, When
-        //     fetch the car, Then return nothing with error message "Unrecognized parking ticket."
     @Test
     void should_exception_error_message_unrecognized_parking_ticket_when_fetch_given_standard_parking_boy_two_parking_lots_used_ticket() {
         //given
