@@ -42,4 +42,8 @@ public class ParkingLot {
     public boolean isTicketUnrecognized(ParkingTicket parkingTicket){
         return !parkedPosition.containsKey(parkingTicket);
     }
+
+    public int getAvailablePosition() {
+        return this.capacity - parkedPosition.size();
+    }
 }
