@@ -10,4 +10,5 @@ public class SuperSmartParkingBoy extends ParkingBoy{
     public SuperSmartParkingBoy(List<ParkingLot> parkingLots) {
         super(parkingLots);
     }
+
 }
