@@ -28,9 +28,15 @@ public class ParkingBoy {
 
     public Car fetch(ParkingTicket parkingTicket) {
         for(ParkingLot parkingLot : parkingLots){
-            return parkingLot.fetch(parkingTicket);
+            try{
+                if(!parkingLot.isTicketUnrecognized(parkingTicket))
+                    return parkingLot.fetch(parkingTicket);
+            }
+            catch (UnrecognizedParkingTicketException e){
+
+            }
         }
-        return null;
+        throw new UnrecognizedParkingTicketException();
     }
 
     public List<ParkingLot> getParkingLots() {
