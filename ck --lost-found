@@ -1,0 +1,170 @@
+[33mcommit 20f37eee69f448e409338eef2f8c727266e9b950[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sun Aug 8 18:57:50 2021 +0800
+
+    [ST4-ParkingBoy][Francis] feat: should_return_error_message_unrecognized_parking_ticket_when_fetch_given_standard_parking_boy_two_parking_lots_and_an_unrecognized_ticket
+
+[33mcommit b8894269781aaf90e7ea161d81341b17b62aac82[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sun Aug 8 18:41:40 2021 +0800
+
+    [ST4-ParkingBoy][Francis] feat:implement should_return_right_car_with_each_ticket_when_fetch_twice_given_standard_parking_boy_two_parking_lots_both_with_a_parked_car_lot_and_two_parking_tickets
+
+[33mcommit d192b24365598fbb1f6e559485f8b231a590ed77[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sun Aug 8 18:37:52 2021 +0800
+
+    [ST4-ParkingBoy][Francis] test: should_return_right_car_with_each_ticket_when_fetch_twice_given_standard_parking_boy_two_parking_lots_both_with_a_parked_car_lot_and_two_parking_tickets
+
+[33mcommit b1ddea2714a1d7b32588a208c63387406551db84[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sun Aug 8 18:09:11 2021 +0800
+
+    [ST4-ParkingBoy][Francis] feat: implement should_park_car_to_the_second_parking_lot_when_park_given_standard_parking_boy_two_parking_lots_with_first_parking_lot_full_second_parking_lot_available_position_and_car
+
+[33mcommit 65ddd98182c89211bb9328777361e6a4273305d6[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sun Aug 8 00:15:20 2021 +0800
+
+    [ST4-ParkingBoy][Francis] test: should park car to the second parking lot when park given standard boy two parking lots with first parking lot full second parking lot available position and car
+
+[33mcommit 07d30eb5a32425e7195a99cb6612c6eb93cf8af3[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 22:43:26 2021 +0800
+
+    [ST4-ParkingBoy][Francis] feat: should park car to the first parking lot when park given standard parking boy two parking lots with available psotions and car
+
+[33mcommit 017bee669a2c7f7ac768424532157e507b54d4c8[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 22:19:32 2021 +0800
+
+    [ParkingBoy][Francis] test: should park car to the first parking lot when park given standard parking boy two parking lots with available psotions and car
+
+[33mcommit decaeb0698dc01b9d489ac9d959c7f6a0e3b616a[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 21:11:07 2021 +0800
+
+    [ParkingBoy][Francis] feat: implement should return exception with no available position when park given a parking lot without any position, parking bo, and car
+
+[33mcommit 58c3e2f10b72ebdec6077437bfcda94cd9016c16[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 20:32:55 2021 +0800
+
+    [ParkingBoy][Francis] feat: implement should return exception with unrecognized parking ticket when fetch given a parking lot parking boy parking boy and used ticket
+
+[33mcommit f3e6bcec4e677005c9d2659b6f0cd9130a383b9a[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 20:19:33 2021 +0800
+
+    [ParkingLot][Francis] feat: added back deleted test case for should return exception with unrecognized parking ticket when fetch given a parking lot and used ticket
+
+[33mcommit c28ef754a909dfc08336410997bb115596e98768[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 19:50:33 2021 +0800
+
+    [ParkingBoy][Francis] feat: implement should return exception with no available position when park given a parking lot without any position, parking boy and a car
+
+[33mcommit 19846e5df1a862b8e943a02890730b155559228f[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 19:46:04 2021 +0800
+
+    [ParkingBoy][Francis] feat: implement should return exception when fetch given a parking lot, a parking boy and wrong ticket
+
+[33mcommit 00ffa1d02132b6b4df4c5a438b7db4c2d1fde858[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 19:45:16 2021 +0800
+
+    [ParkingBoy][Francis] feat: implement should return exception when fetch given a parking lot and wrong ticket
+
+[33mcommit cf1f9e37eb4d3c7053c894937290e5ceeb5dd8cf[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 19:39:43 2021 +0800
+
+    [ParkingBoy][Francis] test & feat: implement should_return_car_when_fetch_given_parking_lot_with_a_parked_car_standard_parking_boy_and_ticket
+
+[33mcommit ea6c3ee1d0aef2e7294f09416fa91dd392d484e2[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 19:19:18 2021 +0800
+
+    [ParkingBoy][Francis] feat: implement should_return_car_when_fetch_given_parking_lot_with_a_parked_car_standard_parking_boy_and_ticket
+
+[33mcommit 53eb63d6147b2ea5a8d845616c3c09135f38b1aa[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 18:59:50 2021 +0800
+
+    [ParkingBoy][Francis] test: should_return_car_when_fetch_given_parking_lot_with_a_parked_car_standard_parking_boy_and_ticket
+
+[33mcommit 5e01ac989aa218e57c7887b94a29e6af3b8800a3[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 18:49:34 2021 +0800
+
+    [ParkingBoy][Francis] feat: implement should_return_parking_ticket_when_park_given_a_parking_lot_standard_parking_boy_and_a_car
+
+[33mcommit 8a426e43b1dc4bf9f84bfceacd3d3fec07e7cee4[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 18:06:19 2021 +0800
+
+    [ParkingBoy][Francis] test: should_return_parking_ticket_when_park_given_a_parking_lot_standard_parking_boy_and_a_car
+
+[33mcommit 012e37af43381aaa6a5172b44036744299a3537c[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 17:33:42 2021 +0800
+
+    [ParkingLot][Francis] feat: implement should return exception with no available position when park given a parking lot without any position and car
+
+[33mcommit 4114fae866f4e386f3a703d38ec84ae8a6dac283[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 17:33:22 2021 +0800
+
+    [ParkingLot][Francis] feat: implement should return exception with no available position when park given a parking lot without any position and car
+
+[33mcommit 4ffedcdbb517d48ec72754e9536cadcda53157ed[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 17:15:55 2021 +0800
+
+    [ParkingLot][Francis] test:should return exception with no available position when park given a parking lot without any position and car
+
+[33mcommit 5508e011c4b41ebbe09ba4645197cc3697ee740f[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 17:12:41 2021 +0800
+
+    [ParkingLot][Francis] feat: implemented should_return_exception_when_fetch_given_a_parking_lot_and_wrong_ticket
+
+[33mcommit bbb6766850cadee23e7961c5b63b108539e8dad0[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 17:08:43 2021 +0800
+
+    [ParkingLot][Francis] test: should_return_exception_when_fetch_given_a_parking_lot_and_wrong_ticket
+
+[33mcommit 30a97c966d6be293a26d58f21640e1ee9571da6f[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 16:58:08 2021 +0800
+
+    [ParkingLot][Francis] feat: should return nothing when park given parking lot without any position and a car
+
+[33mcommit d39d47392966b7dc7aa76056095f041435ef1035[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Sat Aug 7 15:57:20 2021 +0800
+
+    [ParkingLot][Francis] test: should return nothing when park given parking lot without any position and a car
+
+[33mcommit bfedb12ab126c8906040284d9c6a613f6b6d0458[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Fri Aug 6 16:21:56 2021 +0800
+
+    [ParkingLot][Francis] test:  should return the null when fetch given parking lot wrong parking ticket
+
+[33mcommit 10461d0e213b6ec0da5b261b01f13dd78027e281[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Fri Aug 6 16:07:51 2021 +0800
+
+    [ParkingLot][Francis] feat: implement should return the null when fetch given parking lot used parking ticket
+
+[33mcommit 6c242f2270968b3a5d36e37538e06da5daf1954c[m
+Author: David Salonga <fdc.salonga@gmail.com>
+Date:   Fri Aug 6 16:00:32 2021 +0800
+
+    [ParkingLot][Francis] test: should return the null when fetch given parking lot used parking ticket
+
+[33mcommit 367ea9db35dde8016b4ff8481ddb663f1dc52ee7[m
+Author: David Salonga <fdc.salong
