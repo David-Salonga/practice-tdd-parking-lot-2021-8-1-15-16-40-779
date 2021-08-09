@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class SmartParkingBoyTest {
 
     @Test
-    void should_park_car_to_the_first_parking_lot_when_park_given_smart_parking_boy_two_parking_lots_with_available_positions_and_car() {
+    void should_park_car_to_the_first_parking_lot_when_park_given_smart_parking_boy_and_two_parking_lots_with_available_positions_and_car() {
         //given
         ParkingLot parkingLot1 = new ParkingLot();
         ParkingLot parkingLot2 = new ParkingLot();
