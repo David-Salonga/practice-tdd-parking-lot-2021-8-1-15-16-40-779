@@ -11,4 +11,17 @@ public class SuperSmartParkingBoy extends ParkingBoy{
         super(parkingLots);
     }
 
+    public ParkingTicket park(Car car) {
+        ParkingLot parkingLotWithLargerPositionRateAvailable = null;
+        for (ParkingLot parkingLot : parkingLots) {
+            if (parkingLot.getAvailablePosition() > 0 && (parkingLotWithLargerPositionRateAvailable == null || parkingLot.getLargerAvailablePositionRate() >
+                    parkingLotWithLargerPositionRateAvailable.getLargerAvailablePositionRate())) {
+                parkingLotWithLargerPositionRateAvailable = parkingLot;
+            }
+        }
+        if(parkingLotWithLargerPositionRateAvailable == null){
+            throw new NoAvailablePositionException();
+        }
+        return parkingLotWithLargerPositionRateAvailable.park(car);
+    }
 }
