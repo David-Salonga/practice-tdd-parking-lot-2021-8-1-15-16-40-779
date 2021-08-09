@@ -1,6 +1,7 @@
 package com.parkinglot;
 
 import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -111,10 +112,10 @@ public class ParkingBoyTest {
         parkingLots.add(parkingLot1);
         parkingLots.add(parkingLot2);
         Car car = new Car();
-                
+
         //when
         ParkingTicket parkingTicket = parkingBoy.park(car);
-        
+
         //then
         Car actualCar = parkingLot1.fetch(parkingTicket);
         assertEquals(car, actualCar);
@@ -139,8 +140,7 @@ public class ParkingBoyTest {
         Car actualCar = parkingLot2.fetch(parkingTicket);
         assertEquals(car, actualCar);
     }
-    // - Given a standard parking boy, who manage two parking lots, both with a parked car, and
-    //      two parking ticket, When fetch the car twice, Then return the right car with each ticket
+
     @Test
     void should_return_right_car_with_each_ticket_when_fetch_twice_given_standard_parking_boy_two_parking_lots_both_with_a_parked_car_lot_and_two_parking_tickets() {
         //given
